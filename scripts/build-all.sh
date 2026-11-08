@@ -1,7 +1,8 @@
-
+#!/usr/bin/env bash
+set -euo pipefail
 
 for dockerfile in dockerfiles/*; do
-   file="${dockerfile##dockerfiles/}"
-   echo $file
-   docker build -f $dockerfile -t $file .
+   name="${dockerfile##dockerfiles/}"
+   echo "$name"
+   docker build -f "$dockerfile" -t "$name" .
 done

@@ -2,6 +2,8 @@
 
 https://craig.allardyce.me/projects/2023/nodejs-container-sizes
 
+Compares image sizes for a minimal Express app across Node.
+
 ## Usage
 
 `./scripts/build-all.sh` - build all the images
